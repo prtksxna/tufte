@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Wordpress
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -267,7 +268,7 @@ select,
 optgroup,
 textarea {
 	color: #111111;
-	font-family: Palantino, Georgia, serif;
+	font-family: 'Cormorant Garamond', Palantino, Georgia, serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -279,6 +280,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-weight: 600;
 	clear: both;
 }
 
@@ -510,15 +512,15 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: #111;
-text-decoration: none;
-         background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
-         background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
-         -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-         -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-         background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-         background-repeat: no-repeat, no-repeat, repeat-x;
-         text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
-background-position: 0% 93%, 100% 93%, 0% 93%;
+	text-decoration: none;
+	background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
+	background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
+	-webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+	-moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+	background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+	background-position: 0% 93%, 100% 93%, 0% 93%;
 }
 
 a:visited {
@@ -539,6 +541,17 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+	color: #111;
+	text-decoration: none;
+	background: none;
+	text-shadow: none
+}
+
 
 /*--------------------------------------------------------------
 ## Menus
@@ -903,4 +916,27 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## Wordpress
+--------------------------------------------------------------*/
+#masthead {
+	margin: 5em 0;
+	font-size: 1.3rem;
+}
+
+#masthead h1 {
+	margin: 0
+}
+
+#masthead .site-description {
+	margin-top: 0;
+	font-style: italic;
+}
+
+.menu a {
+	font-family: 'Lato', 'Gill Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
 }
