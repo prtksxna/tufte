@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-wordpress": "^1.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "stylelint": "^7.10.1",
+    "stylelint-config-wordpress": "^9.1.1"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-wordpress"
+  },
+  "scripts": {
+    "stylelint": "./node_modules/.bin/stylelint */**.css",
+    "eslint": "./node_modules/.bin/eslint */**.js",
+    "lint": "npm run stylelint && npm run eslint",
+    "test": "npm run lint",
+    "deploy": "ssh prtksxna@139.59.62.25 'cd xacuti && git pull origin master'"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "wp-coding-standards/wpcs": "*"
+  },
+  "scripts": {
+    "post-install-cmd": "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+    "test": "./vendor/bin/phpcs --standard=WordPress *.php */*.php --ignore=vendor"
+  }
+}
