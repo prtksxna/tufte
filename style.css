@@ -354,9 +354,16 @@ html {
 }
 
 body {
-	background: #fffff8; /* Fallback for when there is no custom background color defined. */
-	padding-left: 12%;
-	width: 80%;
+	width: 87.5%;
+	margin-right: auto;
+	padding-left: 12.5%;
+	background-color: #fffff8;
+	color: #111;
+	max-width: 1400px;
+}
+
+#page {
+	width: 65%;
 }
 
 blockquote:before,
@@ -924,7 +931,7 @@ object {
 --------------------------------------------------------------*/
 #masthead {
 	margin: 5em 0;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 }
 
 #masthead h1 {
@@ -946,11 +953,12 @@ object {
 	font-style: italic;
 	font-size: 2rem;
 	margin: 0;
+	margin-bottom: -1rem;
 }
 
 .entry-content {
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .entry-meta,
