@@ -962,9 +962,13 @@ object {
 	font-size: 1.3rem;
 }
 
-.entry-meta,
 .entry-footer {
 	font-family: 'Lato', 'Gill Sans', sans-serif;
 	font-size: 0.6rem;
 	text-transform: uppercase;
+}
+
+.entry-footer > span {
+	display: inline-block;
+	margin-right: 0 0.1rem;
 }
