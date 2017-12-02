@@ -966,6 +966,12 @@ object {
 	font-family: 'Lato', 'Gill Sans', sans-serif;
 	font-size: 0.6rem;
 	text-transform: uppercase;
+	color: #ccd;
+}
+
+.entry-footer a {
+	border-color: #ccd;
+	color: #ccd;
 }
 
 .entry-footer > span {
