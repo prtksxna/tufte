@@ -16,7 +16,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,600,600i|Lato:400,700" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -35,11 +34,11 @@
 			<?php
 			endif;
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
+		$description = get_bloginfo( 'description', 'display' );
+if ( $description || is_customize_preview() ) :	?>
+			<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+		<?php
+		endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

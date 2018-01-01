@@ -1,6 +1,6 @@
 <?php
 /**
- * tufte Theme Customizer
+ * Theme Customizer for tufte
  *
  * @package tufte
  */
